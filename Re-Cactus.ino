@@ -30,7 +30,7 @@ void loop() {
        servoAngle = 90;
        for (int bloom = 0; bloom <= 90; bloom++) {
               myservo.write(bloom);
-              delay(300000);
+              delay(45000);
        }
       digitalWrite(blueled, HIGH);
      
@@ -41,7 +41,7 @@ void loop() {
       digitalWrite(blueled, LOW);
        for (int bloom = 90; bloom >= 0; bloom--) {
               myservo.write(bloom);
-              delay(300000);
+              delay(45000);
        }
       servoAngle = 0;  
     }
